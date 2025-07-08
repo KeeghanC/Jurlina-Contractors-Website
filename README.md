@@ -1,1 +1,1 @@
-# Jurlina Contractors Website
+A responsive, modern website for Jurlina Contractors built using **Angular** and styled with **Bootstrap 5**. It features dynamic content, mobile-friendly design, and component-based structure for scalability.
