@@ -1,0 +1,29 @@
+.service-card {
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); // subtle default shadow
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  border: 1px solid #e5e7eb; // light border for definition
+  max-width: 500px;
+  min-height: 150px;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+  }
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937; // slate-800
+    margin-bottom: 0.75rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #4b5563; // slate-600
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,1 @@
+export const missionStatement = 'Our mission is to provide honest, professional service with a personal touch. We believe in building strong relationships with our clients through transparency, quality workmanship, and a can-do attitude.'

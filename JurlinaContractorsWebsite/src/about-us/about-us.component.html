@@ -1,0 +1,28 @@
+<section class="about-us">
+  <h1>About Jurlina Contractors</h1>
+
+  <div class="content-wrapper">
+    <div class="text-content">
+      <p>
+        At Jurlina Contractors, we bring over <strong>20 years</strong> of experience in earthmoving and excavation across Auckland and beyond. Our dedicated team combines modern machinery with skilled operators to deliver precise, reliable, and safe site preparation for residential, commercial, and rural projects.
+      </p>
+      <p>
+        We are fully licensed and insured, committed to maintaining the highest standards in safety and environmental compliance. Whether you need site clearing, drainage installation, or driveway construction, our team is ready to bring your project to life on time and on budget.
+      </p>
+      <p>{{missionStatement}}</p>
+    </div>
+
+    <div class="image-content">
+      <img src="assets/team-at-work.jpg" alt="Jurlina Contractors team operating machinery" />
+    </div>
+  </div>
+
+  <div class="certifications">
+    <h2>Certifications & Compliance</h2>
+    <ul>
+        @for (certs of certificatesAndCompliances; track certs) {
+        <li>{{ certs }}</li>
+        }
+    </ul>
+  </div>
+</section>
