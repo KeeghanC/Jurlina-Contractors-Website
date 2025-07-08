@@ -1,0 +1,12 @@
+<div class="project-card">
+  <img [src]="project.imageUrl" [alt]="project.title" class="project-image" />
+  <div class="project-content">
+    <h3 class="project-title">{{ project.title }}</h3>
+    <p class="project-description">{{ project.description }}</p>
+    @if(project.location) {
+    <p class="project-location">
+      <strong>Location:</strong> {{ project.location }}
+    </p>
+    }
+  </div>
+</div>
