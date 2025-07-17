@@ -1,4 +1,4 @@
-import { TService } from "../service/service.type";
+import { TService } from "../services/service/service.type";
 
 export const servicesOffered: TService[] = [
   {

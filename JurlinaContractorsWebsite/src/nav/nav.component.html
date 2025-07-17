@@ -1,0 +1,11 @@
+<nav class="nav-bar">
+    <a class="nav-logo">{{ nav.logo.text }}</a>
+    <ul class="nav-links">
+        @for (link of nav.links; track link.label) {
+        <li>
+            <a routerLinkActive="active">{{ link.label }}</a>
+        </li>
+        }
+    </ul>
+    <a class="nav-cta">{{ nav.cta.label }}</a>
+</nav>
