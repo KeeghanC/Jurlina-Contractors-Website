@@ -1,7 +1,7 @@
 <nav class="nav-bar">
     <div class="nav-header">
     <a class="nav-logo">{{ nav.logo.text }}</a>
-    <app-hamburger (pressed)="toggleSideav()" />
+    @if (!isLargeScreen) { <app-hamburger (pressed)="toggleSideav()" /> }
     </div>
     @if (showLinks) {
         <ul class="nav-links">

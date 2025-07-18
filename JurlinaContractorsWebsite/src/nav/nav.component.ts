@@ -17,9 +17,12 @@ export class NavComponent {
   // Default to on
   showLinks = true;
 
+  isLargeScreen = false;
+
   constructor(private readonly windowSizeService: WindowSizeService) {
     this.windowSizeService.windowSize$.pipe(takeUntilDestroyed()).subscribe((size) => {
       this.showLinks = size.width > 900;
+      this.isLargeScreen = size.width > 900;
     });
   }
 
