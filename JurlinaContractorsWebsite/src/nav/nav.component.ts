@@ -1,13 +1,29 @@
 import { Component } from '@angular/core';
 import { NAV_CONTENT as navContent } from '../constants/nav-content.const';
+import { HamburgerComponent } from "./hamburger/hamburger.component";
+import { WindowSizeService } from '../app-services/window-size.service';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [],
+  imports: [HamburgerComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
   nav = navContent;
+
+  // Default to on
+  showLinks = true;
+
+  constructor(private readonly windowSizeService: WindowSizeService) {
+    this.windowSizeService.windowSize$.pipe(takeUntilDestroyed()).subscribe((size) => {
+      this.showLinks = size.width > 900;
+    });
+  }
+
+  toggleSideav() {
+    this.showLinks = !this.showLinks;
+  }
 }

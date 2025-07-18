@@ -13,6 +13,15 @@
     text-decoration: none;
   }
 
+  .nav-header {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    // width: 100%;
+    padding-right: 1rem;
+    gap: 1rem;
+  }
+
   .nav-links {
     display: flex;
     gap: 2rem;
@@ -29,6 +38,11 @@
         color: #ffffff;
       }
     }
+
+  }
+
+  ul {
+    padding: 0;
   }
 
   .nav-cta {
