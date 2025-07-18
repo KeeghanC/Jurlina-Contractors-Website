@@ -3,28 +3,28 @@ import { TProject } from "../projects/project.type";
 export const projects : TProject[] = [
     // Earthworks examples
     {
-        title: "Earthworks Project 1",
+        title: "Place Holder",
         description: "Excavation and grading for a residential development.",
-        imageUrl: "assets/team-at-work.jpg",
+        imageUrl: "assets/tractor.jpg",
         location: "Downtown Area"
     },
     {
-        title: "Earthworks Project 2",
+        title: "Place Holder",
         description: "Site preparation for a commercial building.",
-        imageUrl: "assets/team-at-work.jpg",
+        imageUrl: "assets/tractor.jpg",
         location: "Business District"
     },
     // Concrete examples
     {
-        title: "Concrete Project 1",
+        title: "Place Holder",
         description: "Foundation pouring for a new office complex.",
-        imageUrl: "assets/team-at-work.jpg",
+        imageUrl: "assets/tractor.jpg",
         location: "Tech Park"
     },
     {
-        title: "Concrete Project 2",
+        title: "Place Holder",
         description: "Sidewalk installation in a residential neighborhood.",
-        imageUrl: "assets/team-at-work.jpg",
+        imageUrl: "assets/tractor.jpg",
         location: "Suburban Area"
     },
 ]
