@@ -3,6 +3,7 @@ import { NAV_CONTENT as navContent } from '../constants/nav-content.const';
 import { HamburgerComponent } from "./hamburger/hamburger.component";
 import { WindowSizeService } from '../app-services/window-size.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -19,7 +20,7 @@ export class NavComponent {
 
   isLargeScreen = false;
 
-  constructor(private readonly windowSizeService: WindowSizeService) {
+  constructor(private readonly windowSizeService: WindowSizeService, readonly router: Router) {
     this.windowSizeService.windowSize$.pipe(takeUntilDestroyed()).subscribe((size) => {
       this.showLinks = size.width > 900;
       this.isLargeScreen = size.width > 900;

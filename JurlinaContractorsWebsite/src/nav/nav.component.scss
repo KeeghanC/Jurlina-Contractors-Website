@@ -7,6 +7,7 @@
   color: #ffffff;
 
   .nav-logo {
+    cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
@@ -23,6 +24,7 @@
   }
 
   .nav-links {
+    cursor: pointer;
     display: flex;
     gap: 2rem;
     list-style: none;
@@ -46,6 +48,7 @@
   }
 
   .nav-cta {
+    cursor: pointer;
     background-color: #f59e0b; // amber-500
     color: #1f2937;
     padding: 0.5rem 1rem;

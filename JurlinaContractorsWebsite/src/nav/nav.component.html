@@ -1,13 +1,13 @@
 <nav class="nav-bar">
     <div class="nav-header">
-    <a class="nav-logo">{{ nav.logo.text }}</a>
+    <a class="nav-logo" (click)="router.navigateByUrl('')">{{ nav.logo.text }}</a>
     @if (!isLargeScreen) { <app-hamburger (pressed)="toggleSideav()" /> }
     </div>
     @if (showLinks) {
         <ul class="nav-links">
             @for (link of nav.links; track link.label) {
             <li>
-                <a routerLinkActive="active">{{ link.label }}</a>
+                <a routerLinkActive="active" (click)="router.navigateByUrl(link.url)">{{ link.label }}</a>
             </li>
             }
         </ul>
