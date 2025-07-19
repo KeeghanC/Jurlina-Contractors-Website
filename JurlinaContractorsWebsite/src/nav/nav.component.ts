@@ -4,7 +4,7 @@ import { HamburgerComponent } from "./hamburger/hamburger.component";
 import { WindowSizeService } from '../app-services/window-size.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
-import { contactDetails } from '../constants/contact-details.consts';
+import { contactDetails, mobileOneWord } from '../constants/contact-details.consts';
 
 @Component({
   selector: 'app-nav',
@@ -16,7 +16,7 @@ import { contactDetails } from '../constants/contact-details.consts';
 export class NavComponent {
   nav = navContent;
 
-  phoneHref = `tel:${contactDetails.mobileNumber}`;
+  phoneHref = `tel:${mobileOneWord}`;
 
   // Default to on
   showLinks = true;

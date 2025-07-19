@@ -5,7 +5,7 @@ export const projects : TProject[] = [
     {
         title: "Commercial Leveling",
         description: "Excavation and grading for a commercial development.",
-        imageUrl: "assets/1.jpg",
+        imageUrl: "assets/4.jpg",
         location: "Downtown Area"
     },
     {
