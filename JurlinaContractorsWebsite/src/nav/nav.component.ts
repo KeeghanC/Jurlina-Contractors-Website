@@ -4,6 +4,7 @@ import { HamburgerComponent } from "./hamburger/hamburger.component";
 import { WindowSizeService } from '../app-services/window-size.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
+import { contactDetails } from '../constants/contact-details.consts';
 
 @Component({
   selector: 'app-nav',
@@ -14,6 +15,8 @@ import { Router } from '@angular/router';
 })
 export class NavComponent {
   nav = navContent;
+
+  phoneHref = `tel:${contactDetails.mobileNumber}`;
 
   // Default to on
   showLinks = true;

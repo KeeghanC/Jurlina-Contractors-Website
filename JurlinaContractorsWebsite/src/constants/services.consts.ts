@@ -19,7 +19,7 @@ export const servicesOffered: TService[] = [
   },
   {
     serviceTitle: 'Land Levelling & Contouring',
-    serviceDescription: 'Accurate grading and contouring for lawns, house pads, retaining walls, or rural properties using GPS-guided equipment.'
+    serviceDescription: 'Accurate grading and contouring for lawns, house pads, retaining walls, or rural properties.'
   },
   {
     serviceTitle: 'Retaining Wall Prep & Backfill',
@@ -27,10 +27,14 @@ export const servicesOffered: TService[] = [
   },
   {
     serviceTitle: 'Demolition & Removal',
-    serviceDescription: 'Safe removal of old sheds, driveways, fencing, or small structures. Includes waste disposal and site clean-up.'
+    serviceDescription: 'Safe removal of homes, sheds, driveways, fencing, or other structures. Includes waste disposal and site clean-up.'
   },
   {
     serviceTitle: 'Tip Truck Hire & Material Supply',
     serviceDescription: 'Competitive rates for tip truck and driver hire. We can supply and deliver topsoil, gravel, scoria, sand, and more.'
+  },
+  {
+    serviceTitle: 'Creek & River Management',
+    serviceDescription: 'Specialised services in managing and restoring waterways. We provide erosion control, bank stabilisation, and habitat restoration to protect natural ecosystems and support long-term environmental sustainability.',
   }
 ];
