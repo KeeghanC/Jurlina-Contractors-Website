@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NAV_CONTENT as navContent } from '../constants/nav-content.const';
+import { NAV_CONTENT } from '../constants/nav-content.const';
 import { HamburgerComponent } from "./hamburger/hamburger.component";
 import { WindowSizeService } from '../app-services/window-size.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 import { contactDetails, mobileOneWord } from '../constants/contact-details.consts';
+import { PHONE_HREF } from '../constants/phone-href.const';
 
 @Component({
   selector: 'app-nav',
@@ -14,9 +15,9 @@ import { contactDetails, mobileOneWord } from '../constants/contact-details.cons
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
-  nav = navContent;
+  nav = NAV_CONTENT;
 
-  phoneHref = `tel:${mobileOneWord}`;
+  phoneHref = PHONE_HREF;
 
   // Default to on
   showLinks = true;

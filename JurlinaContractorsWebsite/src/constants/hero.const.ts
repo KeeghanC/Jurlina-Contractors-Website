@@ -7,4 +7,4 @@ export const heroContent = {
     src: 'assets/tractor.jpg',
     alt: 'Excavator working on a construction site'
   }
-};
+} as const;

@@ -16,4 +16,4 @@ export const NAV_CONTENT = {
     label: 'Request a Quote',
     url: '/contact'
   }
-};
+} as const;
