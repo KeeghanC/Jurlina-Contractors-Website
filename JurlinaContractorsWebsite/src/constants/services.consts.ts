@@ -30,11 +30,7 @@ export const servicesOffered: TService[] = [
     serviceDescription: 'Safe removal of homes, sheds, driveways, fencing, or other structures. Includes waste disposal and site clean-up.'
   },
   {
-    serviceTitle: 'Tip Truck Hire & Material Supply',
-    serviceDescription: 'Competitive rates for tip truck and driver hire. We can supply and deliver topsoil, gravel, scoria, sand, and more.'
-  },
-  {
     serviceTitle: 'Creek & River Management',
-    serviceDescription: 'Specialised services in managing and restoring waterways. We provide erosion control, bank stabilisation, and habitat restoration to protect natural ecosystems and support long-term environmental sustainability.',
+    serviceDescription: 'Specialised services in managing and restoring waterways. We provide erosion control, bank stabilisation, whilst protecting natural ecosystems.',
   }
 ];
