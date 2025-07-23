@@ -1,7 +1,7 @@
 import { TContactDetails } from "../contactus/contact-details.type";
 
 export const contactDetails : TContactDetails = {
-    email: 'nick@jurlinacontractors.co.nz',
+    email: 'northern.mulching@gmail.com',
     mobileNumber: '+64 27 283 1088',
 }
 
