@@ -1,29 +1,27 @@
 import { TProject } from "../projects/project.type";
 
 export const projects : TProject[] = [
-    // Earthworks examples
     {
-        title: "Commercial Leveling",
-        description: "Excavation and grading for a commercial development.",
+        title: "Site Preperation & Leveling",
+        description: "Comprehensive earthmoving and leveling contouring on your lifestyle property.",
         imageUrl: "assets/4.jpg",
         location: "Downtown Area"
     },
     {
-        title: "Mulching",
-        description: "Placeholder desc",
+        title: "Land Clearing & Mulching",
+        description: "Efficient vegetation removal and mulching to prepare lifestyle properties, subdivisions, and commercial sites.",
         imageUrl: "assets/2.jpg",
         location: "Business District"
     },
-    // Concrete examples
     {
-        title: "Mulching",
-        description: "Placeholder desc",
+        title: "Dam Construction",
+        description: "Wetland creation and silt pond clean outs.",
         imageUrl: "assets/3.jpg",
         location: "Tech Park"
     },
     {
-        title: "Mulching",
-        description: "Placeholder desc",
+        title: "Residential Earthworks",
+        description: "Groundworks and land shaping services for new builds and residential subdivisions.",
         imageUrl: "assets/5.jpg",
         location: "Suburban Area"
     },
