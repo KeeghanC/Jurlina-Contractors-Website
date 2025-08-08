@@ -10,10 +10,6 @@ export const servicesOffered: TService[] = [
     serviceDescription: 'Specialised slash control, waterway management, and restoration services. We unblock watercourses to ensure optimal water flow and protect natural ecosystems.'
   },
   {
-    serviceTitle: 'Driveway & Accessway Construction',
-    serviceDescription: 'Gravel or compacted metal driveways built to last. We cut and shape accessways with correct water runoff and compaction standards.'
-  },
-  {
     serviceTitle: 'Demolition & Removal',
     serviceDescription: 'Safe removal of homes, sheds, fencing, and other structures. Includes waste disposal and thorough site clean-up.'
   },
