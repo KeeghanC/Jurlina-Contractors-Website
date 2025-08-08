@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { servicesOffered } from '../constants/services.consts';
+import { servicesOffered } from '../services/services.consts';
 import { ServiceComponent } from '../services/service/service.component';
 import { ContactusComponent } from "../contactus/contactus.component";
 import { AboutUsComponent } from "../about-us/about-us.component";

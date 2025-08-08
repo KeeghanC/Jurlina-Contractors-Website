@@ -1,4 +1,4 @@
-import { TService } from "../services/service/service.type";
+import { TService } from "./service/service.type";
 
 export const servicesOffered: TService[] = [
   {
@@ -7,7 +7,7 @@ export const servicesOffered: TService[] = [
   },
   {
     serviceTitle: 'Creek & River Management',
-    serviceDescription: 'Specialised services in slash control, managing and restoring waterways. We specialise in unblocking water courses ensuring waterflow, and protecting natural ecosystems.',
+    serviceDescription: 'Specialised services in slash control, managing, and restoring waterways. We specialise in unblocking watercourses to ensure water flow and protect natural ecosystems.'
   },
   {
     serviceTitle: 'Driveway & Accessway Construction',
@@ -19,10 +19,10 @@ export const servicesOffered: TService[] = [
   },
   {
     serviceTitle: 'Professional Advice',
-    serviceDescription: 'Ability to give sound advice in all facets (small or large) of land contouring, clearing, mulching, re-grassing, and excavations.'
+    serviceDescription: 'Providing sound advice for all facets (small or large) of land contouring, clearing, mulching, re-grassing, and excavations.'
   },
   {
     serviceTitle: 'Tip Truck Hire & Material Supply',
     serviceDescription: 'Competitive rates for tip truck and driver hire. We can supply and deliver topsoil, gravel, scoria, sand, and more.'
   },
-];
+] as const satisfies TService[];
