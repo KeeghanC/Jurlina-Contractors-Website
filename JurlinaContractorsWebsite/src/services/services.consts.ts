@@ -7,22 +7,22 @@ export const servicesOffered: TService[] = [
   },
   {
     serviceTitle: 'Creek & River Management',
-    serviceDescription: 'Specialised services in slash control, managing, and restoring waterways. We specialise in unblocking watercourses to ensure water flow and protect natural ecosystems.'
+    serviceDescription: 'Specialised slash control, waterway management, and restoration services. We unblock watercourses to ensure optimal water flow and protect natural ecosystems.'
   },
   {
     serviceTitle: 'Driveway & Accessway Construction',
-    serviceDescription: 'Gravel or compacted metal driveways built to last. We cut and shape accessways with proper water runoff and compaction standards.'
+    serviceDescription: 'Gravel or compacted metal driveways built to last. We cut and shape accessways with correct water runoff and compaction standards.'
   },
   {
     serviceTitle: 'Demolition & Removal',
-    serviceDescription: 'Safe removal of homes, sheds, fencing, or other structures. Includes waste disposal and site clean-up.'
+    serviceDescription: 'Safe removal of homes, sheds, fencing, and other structures. Includes waste disposal and thorough site clean-up.'
   },
   {
     serviceTitle: 'Professional Advice',
-    serviceDescription: 'Providing sound advice for all facets (small or large) of land contouring, clearing, mulching, re-grassing, and excavations.'
+    serviceDescription: 'Sound advice on all aspects of land contouring, clearing, mulching, re-grassing, and excavation projects—big or small.'
   },
   {
     serviceTitle: 'Tip Truck Hire & Material Supply',
-    serviceDescription: 'Competitive rates for tip truck and driver hire. We can supply and deliver topsoil, gravel, scoria, sand, and more.'
+    serviceDescription: 'Competitive rates for tip truck and driver hire. We supply and deliver topsoil, gravel, scoria, sand, and more.'
   },
 ] as const satisfies TService[];

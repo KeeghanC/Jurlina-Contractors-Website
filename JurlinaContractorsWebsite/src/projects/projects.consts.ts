@@ -9,7 +9,7 @@ export const projects: TProject[] = [
     },
     {
         title: "Land Clearing & Mulching",
-        description: "Efficient vegetation removal and mulching to prepare lifestyle properties, subdivisions, and commercial sites.",
+        description: "Efficient vegetation removal and mulching for lifestyle properties, subdivisions, and commercial sites.",
         imageUrl: "assets/project_2.jpg",
         location: "Business District"
     },
@@ -21,7 +21,7 @@ export const projects: TProject[] = [
     },
     {
         title: "Residential Earthworks",
-        description: "Groundworks and land shaping services for new builds and residential subdivisions.",
+        description: "Groundworks and land shaping for new builds and residential subdivisions.",
         imageUrl: "assets/project_1.jpg",
         location: "Suburban Area"
     },
