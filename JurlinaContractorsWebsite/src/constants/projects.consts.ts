@@ -1,28 +1,28 @@
 import { TProject } from "../projects/project.type";
 
-export const projects: TProject[] = [
+export const projects : TProject[] = [
     {
-        title: "Site Preparation & Leveling",
-        description: "Comprehensive earthmoving and leveling services for commercial construction readiness.",
-        imageUrl: "assets/project_1.jpg",
+        title: "Site Preperation & Leveling",
+        description: "Comprehensive earthmoving and leveling contouring on your lifestyle property.",
+        imageUrl: "assets/4.jpg",
         location: "Downtown Area"
     },
     {
         title: "Land Clearing & Mulching",
-        description: "Efficient vegetation removal and mulching to prepare land for development or landscaping.",
-        imageUrl: "assets/project_2.jpg",
+        description: "Efficient vegetation removal and mulching to prepare lifestyle properties, subdivisions, and commercial sites.",
+        imageUrl: "assets/2.jpg",
         location: "Business District"
     },
     {
-        title: "Brush Cutting & Ground Prep",
-        description: "Clearing dense undergrowth and preparing ground for infrastructure or environmental projects.",
-        imageUrl: "assets/project_3.jpg",
+        title: "Dam Construction",
+        description: "Wetland creation and silt pond clean outs.",
+        imageUrl: "assets/3.jpg",
         location: "Tech Park"
     },
     {
         title: "Residential Earthworks",
         description: "Groundworks and land shaping services for new builds and residential subdivisions.",
-        imageUrl: "assets/project_4.jpg",
+        imageUrl: "assets/5.jpg",
         location: "Suburban Area"
     },
 ] as const satisfies TProject[];

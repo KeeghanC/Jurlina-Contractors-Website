@@ -14,6 +14,5 @@ export const NAV_CONTENT = {
   ],
   cta: {
     label: 'Request a Quote',
-    url: '/contact'
   }
 } as const;

@@ -4,7 +4,7 @@ export const heroContent = {
   ctaText: 'Get a Free Quote',
   ctaLink: '/contact',
   image: {
-    src: 'assets/tractor.jpg',
+    src: 'assets/hero.jpg',
     alt: 'Excavator working on a construction site'
   }
 } as const;
