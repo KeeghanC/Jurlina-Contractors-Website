@@ -16,9 +16,5 @@ export const servicesOffered: TService[] = [
   {
     serviceTitle: 'Professional Advice',
     serviceDescription: 'Sound advice on all aspects of land contouring, clearing, mulching, re-grassing, and excavation projects—big or small.'
-  },
-  {
-    serviceTitle: 'Tip Truck Hire & Material Supply',
-    serviceDescription: 'Competitive rates for tip truck and driver hire. We supply and deliver topsoil, gravel, scoria, sand, and more.'
-  },
+  }
 ] as const satisfies TService[];
