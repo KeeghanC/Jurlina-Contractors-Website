@@ -1,29 +1,48 @@
 .service-card {
+  display: flex;
+  flex-direction: column;
   margin-top: 15px;
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 1.5rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); // subtle default shadow
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.25s ease, transform 0.25s ease;
-  border: 1px solid #e5e7eb; // light border for definition
+  border: 1px solid #e5e7eb;
   max-width: 500px;
-  min-height: 250px;
+  min-height: 475px;
 
   &:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     transform: translateY(-4px);
   }
 
-  .title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1f2937; // slate-800
-    margin-bottom: 0.75rem;
+  .service-content {
+    .title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .description {
+      margin-bottom: 0 !important;
+      font-size: 1rem;
+      color: #4b5563;
+      line-height: 1.6;
+    }
   }
 
-  .description {
-    font-size: 1rem;
-    color: #4b5563; // slate-600
-    line-height: 1.6;
+  .service-image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto; // pushes image down
+
+    .service-image {
+      max-width: 100%;   // keeps it from being huge
+      max-height: 100%;  // hard height cap
+      height: auto;       // keeps proportions
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      object-fit: contain;
+    }
   }
 }

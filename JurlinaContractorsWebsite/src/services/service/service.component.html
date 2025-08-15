@@ -1,4 +1,9 @@
 <div class="service-card">
-  <h3 class="title">{{ service.serviceTitle }}</h3>
-  <p class="description">{{ service.serviceDescription }}</p>
+  <div class="service-content">
+    <h3 class="title">{{ service.serviceTitle }}</h3>
+    <p class="description">{{ service.serviceDescription }}</p>
+  </div>
+  <div class="service-image-wrapper">
+    <img src="{{ service.imageUrl }}" alt="{{ service.serviceTitle }}" class="service-image" />
+  </div>
 </div>
