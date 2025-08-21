@@ -5,51 +5,59 @@
     <!-- Contact Info -->
     <section class="contact-info">
       <h2>Get in Touch</h2>
-      <!-- <p><strong>Email: </strong> <a href="mailto:{{ contactDetails.email }}">{{ contactDetails.email }}</a></p> -->
       <p><strong>Mobile: </strong> <a href="tel:{{ contactDetails.mobileNumber }}">{{ contactDetails.mobileNumber }}</a></p>
     </section>
 
     <!-- Contact Form -->
     <section class="contact-form-section">
       <h2>Send Us a Message</h2>
-      <form (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate>
+
+      <!-- Success message -->
+      @if (submitted) {
+        <div class="success-message">
+          ✅ Thanks for your message - we'll be in touch soon.
+        </div>
+      }
+
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+        <!-- Name -->
         <div class="form-group">
           <label for="name">Name <span class="required">*</span></label>
           <input
             type="text"
             id="name"
             name="name"
-            required
             ngModel
+            required
             #name="ngModel"
             [class.invalid]="name.invalid && name.touched"
             placeholder="Your full name"
           />
           @if (name.invalid && name.touched) {
-          <div class="error">Name is required.</div>
+            <div class="error">Name is required.</div>
           }
         </div>
 
+        <!-- Email -->
         <div class="form-group">
           <label for="email">Email <span class="required">*</span></label>
           <input
             type="email"
             id="email"
             name="email"
+            ngModel
             required
             email
-            ngModel
             #email="ngModel"
             [class.invalid]="email.invalid && email.touched"
             placeholder="you@example.com"
           />
           @if (email.invalid && email.touched) {
-          <div class="error" >
-            Please enter a valid email.
-          </div>
+            <div class="error">Please enter a valid email.</div>
           }
         </div>
 
+        <!-- Phone -->
         <div class="form-group">
           <label for="phone">Phone</label>
           <input
@@ -61,14 +69,15 @@
           />
         </div>
 
+        <!-- Message -->
         <div class="form-group">
           <label for="message">Message <span class="required">*</span></label>
           <textarea
             id="message"
             name="message"
+            ngModel
             required
             rows="5"
-            ngModel
             #message="ngModel"
             [class.invalid]="message.invalid && message.touched"
             placeholder="Write your message here..."
