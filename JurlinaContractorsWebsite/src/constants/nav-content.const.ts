@@ -10,7 +10,8 @@ export const NAV_CONTENT = {
     { label: 'Services', url: '/services' },
     { label: 'Projects', url: '/projects' },
     { label: 'About', url: '/about' },
-    { label: 'Contact', url: '/contact' }
+    { label: 'Contact', url: '/contact' },
+    { label: 'Testimonials', url: '/testimonials' }
   ],
   cta: {
     label: 'Request a Quote',

@@ -6,6 +6,8 @@ import { ContactusComponent } from '../contactus/contactus.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from '../home/home.component';
 import { ProjectsComponent } from '../projects/projects.component';
+import { TestimonialComponent } from '../testimonials/testimonial/testimonial.component';
+import { TestimonialsComponent } from '../testimonials/testimonials.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,5 +15,6 @@ export const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'contact', component: ContactusComponent },
+  { path: 'testimonials', component: TestimonialsComponent },
   { path: '*', component: HomeComponent },
 ];

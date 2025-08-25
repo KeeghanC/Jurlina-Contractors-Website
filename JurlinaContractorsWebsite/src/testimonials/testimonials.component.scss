@@ -1,16 +1,16 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.carousel-container {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 4rem;
+}
+
+.carousel-container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px; // ensures arrows don’t overlap card
 }
 
 .testimonial-card {
@@ -19,6 +19,9 @@
   border-radius: 1.5rem;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   min-height: 220px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
   transition: all 0.6s ease-in-out;
 }
 
@@ -30,6 +33,7 @@
 
 .person {
   font-weight: 600;
+  margin-bottom: 0.25rem;
 }
 
 .location {
@@ -37,26 +41,48 @@
   color: #777;
 }
 
-.dots {
-  margin-top: 1rem;
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
-  .dot {
-    width: 10px;
-    height: 10px;
-    background: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s;
+  &:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+  }
 
-    &.active {
-      background: #333;
-    }
+  &.left {
+    left: 0px;  // closer in
+  }
+
+  &.right {
+    right: 0px; // closer in
   }
 }
 
-.mb-1 {
-    margin-bottom: 1rem;
+.progress-bar {
+  height: 4px;
+  background: #eee;
+  margin-top: 1rem;
+  border-radius: 2px;
+  overflow: hidden;
+
+  .progress {
+    height: 100%;
+    background: #333;
+    transition: width 0.1s linear;
+  }
 }
