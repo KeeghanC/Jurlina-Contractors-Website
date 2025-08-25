@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="mb-1">
+        <h1>Testimonials</h1>
+    </div>
+    <div class="carousel-container">
+        <div class="testimonial-card" >
+            <p class="text">“{{ testimonials[currentIndex].text }}”</p>
+            <h4 class="person">{{ testimonials[currentIndex].person }}</h4>
+            <span class="location">{{ testimonials[currentIndex].location }}</span>
+        </div>
+
+        <!-- Navigation dots -->
+        <div class="dots">
+            @for (testimonal of testimonials; track testimonal;) {
+            <span class="dot" (click)="goTo($index)"></span>
+            }
+        </div>
+    </div>
+</div>

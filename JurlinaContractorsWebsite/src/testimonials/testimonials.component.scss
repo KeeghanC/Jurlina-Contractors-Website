@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.carousel-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  min-height: 220px;
+  transition: all 0.6s ease-in-out;
+}
+
+.text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.person {
+  font-weight: 600;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.dots {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &.active {
+      background: #333;
+    }
+  }
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
