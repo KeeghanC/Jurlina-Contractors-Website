@@ -8,11 +8,10 @@ import { contactDetails, mobileOneWord } from '../constants/contact-details.cons
 import { PHONE_HREF } from '../constants/phone-href.const';
 
 @Component({
-  selector: 'app-nav',
-  standalone: true,
-  imports: [HamburgerComponent],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss'
+    selector: 'app-nav',
+    imports: [HamburgerComponent],
+    templateUrl: './nav.component.html',
+    styleUrl: './nav.component.scss'
 })
 export class NavComponent {
   nav = NAV_CONTENT;

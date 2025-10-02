@@ -8,11 +8,10 @@ const defaultService: TService = {
 };
 
 @Component({
-  selector: 'app-service',
-  standalone: true,
-  imports: [],
-  templateUrl: './service.component.html',
-  styleUrl: './service.component.scss'
+    selector: 'app-service',
+    imports: [],
+    templateUrl: './service.component.html',
+    styleUrl: './service.component.scss'
 })
 export class ServiceComponent {
   @Input({ required: true }) service: TService = defaultService;

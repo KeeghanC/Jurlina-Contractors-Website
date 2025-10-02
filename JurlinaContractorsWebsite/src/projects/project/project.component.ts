@@ -9,11 +9,10 @@ const defaultProject: TProject = {
 };
 
 @Component({
-  selector: 'app-project',
-  standalone: true,
-  imports: [],
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.scss'
+    selector: 'app-project',
+    imports: [],
+    templateUrl: './project.component.html',
+    styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
   @Input({ required: true }) project = defaultProject;

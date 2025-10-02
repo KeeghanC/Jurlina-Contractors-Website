@@ -6,11 +6,10 @@ import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
 
 @Component({
-  selector: 'app-contactus',
-  standalone: true,
-  imports: [FormsModule, HttpClientModule],
-  templateUrl: './contactus.component.html',
-  styleUrl: './contactus.component.scss'
+    selector: 'app-contactus',
+    imports: [FormsModule, HttpClientModule],
+    templateUrl: './contactus.component.html',
+    styleUrl: './contactus.component.scss'
 })
 export class ContactusComponent {
   contactDetails = contactDetails;

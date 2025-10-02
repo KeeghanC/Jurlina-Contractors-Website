@@ -3,11 +3,10 @@ import { certificatesAndCompliances } from '../constants/compliance-and-certific
 import { missionStatement } from '../constants/mission-statement.const';
 
 @Component({
-  selector: 'app-about-us',
-  standalone: true,
-  imports: [],
-  templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.scss'
+    selector: 'app-about-us',
+    imports: [],
+    templateUrl: './about-us.component.html',
+    styleUrl: './about-us.component.scss'
 })
 export class AboutUsComponent {
  certificatesAndCompliances = certificatesAndCompliances

@@ -12,8 +12,7 @@ import { ServicesComponent } from "../services/services.component";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, ServiceComponent, ContactusComponent, AboutUsComponent, ProjectComponent, ProjectsComponent, HeroComponent, NavComponent, ServicesComponent],
+  imports: [NavComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
