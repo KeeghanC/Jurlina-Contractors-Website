@@ -1,27 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { testimonials } from './testimonial/testimonial.const';
-import { TestimonialComponent } from "./testimonial/testimonial.component";
 
 @Component({
-    selector: 'app-testimonials',
-    imports: [],
-    templateUrl: './testimonials.component.html',
-    styleUrl: './testimonials.component.scss'
+  selector: 'app-testimonials',
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.scss']
 })
 export class TestimonialsComponent {
   public readonly testimonials = testimonials;
 
-  interval: number = 15000; // default 5s
-
+  interval: number = 15000; // 15s
   currentIndex = 0;
   timeElapsed = 0;
 
   private autoTimer: any;
   private progressTimer: any;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngOnInit(): void {
-    this.startAutoScroll();
-    this.startProgress();
+    if (isPlatformBrowser(this.platformId)) {
+      this.startAutoScroll();
+      this.startProgress();
+    }
   }
 
   ngOnDestroy(): void {
@@ -30,9 +32,7 @@ export class TestimonialsComponent {
   }
 
   startAutoScroll(): void {
-    this.autoTimer = setInterval(() => {
-      this.next();
-    }, this.interval);
+    this.autoTimer = setInterval(() => this.next(), this.interval);
   }
 
   startProgress(): void {
@@ -58,8 +58,8 @@ export class TestimonialsComponent {
   private resetProgress(): void {
     this.timeElapsed = 0;
     clearInterval(this.progressTimer);
-    this.startProgress();
     clearInterval(this.autoTimer);
+    this.startProgress();
     this.startAutoScroll();
   }
 }
