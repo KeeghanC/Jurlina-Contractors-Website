@@ -3,11 +3,10 @@ import { heroContent } from '../constants/hero.const';
 import { PHONE_HREF } from '../constants/phone-href.const';
 
 @Component({
-  selector: 'app-hero',
-  standalone: true,
-  imports: [],
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+    selector: 'app-hero',
+    imports: [],
+    templateUrl: './hero.component.html',
+    styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
   hero = heroContent;

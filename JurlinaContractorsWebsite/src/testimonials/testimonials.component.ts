@@ -3,11 +3,10 @@ import { testimonials } from './testimonial/testimonial.const';
 import { TestimonialComponent } from "./testimonial/testimonial.component";
 
 @Component({
-  selector: 'app-testimonials',
-  standalone: true,
-  imports: [],
-  templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.scss'
+    selector: 'app-testimonials',
+    imports: [],
+    templateUrl: './testimonials.component.html',
+    styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent {
   public readonly testimonials = testimonials;

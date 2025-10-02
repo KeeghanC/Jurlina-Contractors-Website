@@ -11,11 +11,10 @@ import { NavComponent } from "../nav/nav.component";
 import { ServicesComponent } from "../services/services.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, ServiceComponent, ContactusComponent, AboutUsComponent, ProjectComponent, ProjectsComponent, HeroComponent, NavComponent, ServicesComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [RouterOutlet, ServiceComponent, ContactusComponent, AboutUsComponent, ProjectComponent, ProjectsComponent, HeroComponent, NavComponent, ServicesComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   services = servicesOffered;
