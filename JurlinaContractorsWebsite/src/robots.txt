@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jurlinacontractors.co.nz/sitemap.xml
